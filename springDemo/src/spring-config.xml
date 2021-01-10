@@ -10,7 +10,16 @@
           p:age="27"
           p:city="shenzhen"
           p:car-ref="car"
-    />
+    >
+        <property name="hobbys">
+            <list>
+                <value>pingpong</value>
+                <value>basketball</value>
+                <value>teniness</value>
+            </list>
+        </property>
+
+    </bean>
 
     <bean id="car" class="bean.Car"
         p:band="pro"

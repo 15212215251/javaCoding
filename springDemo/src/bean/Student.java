@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Arrays;
+
 public class Student {
 
     public Car car;
@@ -11,6 +13,16 @@ public class Student {
 
     public String city;
 
+    public String[] hobbys;
+
+    public String[] getHobbys() {
+        return hobbys;
+    }
+
+    public void setHobbys(String[] hobbys) {
+        this.hobbys = hobbys;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -18,6 +30,7 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", city='" + city + '\'' +
+                ", hobbys=" + Arrays.toString(hobbys) +
                 '}';
     }
 
