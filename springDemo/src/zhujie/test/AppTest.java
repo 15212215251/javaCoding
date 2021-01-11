@@ -12,6 +12,11 @@ public class AppTest {
         ApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(AppConfig.class);
         Person person = (Person) applicationContext.getBean("person");
+        Person person2 = (Person) applicationContext.getBean("person");
+        System.out.println("---------");
+        System.out.println(person);
+        System.out.println(person2);
+        System.out.println("------");
         person.setName("don");
         person.setSex("male");
         Phone phone = Phone.IPHONE;

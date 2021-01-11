@@ -25,4 +25,14 @@
         p:band="pro"
           p:color="gray"
     />
+
+
+<!--    事件监听相关的注解-->
+
+    <bean id="helloworld" class="springEvent.bean.HelloWorld" p:message="hello world ..."/>
+
+    <bean id="cstartEventHandle" class="springEvent.bean.CStartEventHandle"/>
+    <bean id="cstopEventHandle" class="springEvent.bean.CStopEventHandle"/>
+
+
 </beans>
