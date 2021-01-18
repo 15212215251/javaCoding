@@ -1,9 +1,6 @@
 package com.don.controller;
 
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 
@@ -25,5 +22,10 @@ public class AopAdvice {
     @After("log()")
     public void after() {
         System.out.println("this is after metod ...");
+    }
+
+    @AfterReturning("log()")
+    public void afterReturn() {
+        System.out.println("this is after return method ...");
     }
 }
