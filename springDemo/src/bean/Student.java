@@ -1,7 +1,10 @@
 package bean;
 
-import java.util.Arrays;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import java.util.Arrays;
 public class Student {
 
     public Car car;
